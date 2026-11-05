@@ -21,6 +21,6 @@ Before acting, read this file and the relevant document in `docs/`.
 
 ## Handoff
 
-Every submitted decision artifact goes to the reviewer before execution. The reviewer returns a scoped report to the decision layer. Only a review marked `PASS — scoped`, with no unresolved finding in the checked scope, may be handed to execution. The decision layer may accept a reported risk only by recording an explicit exception; an exception does not change the reviewer’s factual finding.
+Every submitted decision artifact goes to the reviewer before execution. The reviewer returns a scoped report to the decision layer. Only a review marked `PASS — scoped`, with no unresolved finding or material item awaiting verification, may be handed to execution. Findings cannot be waived by a risk-acceptance note. The decision layer may dispute a finding and ask the reviewer to recheck it; if the issue stands, the artifact must be revised or abandoned before handoff.
 
 GitHub branch protection must be configured separately. These repository instructions and PR templates guide agents but do not, by themselves, enforce a server-side merge block.
